@@ -1,0 +1,95 @@
+@import url(reset.css);
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Затемнение */
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+}
+
+/* Само модальное окно */
+.modal-content {
+    background: #0A0A0A;
+    padding: 20px;
+    border: 1px solid #1C1C1C;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.modal-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    p, button {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+}
+
+.modal-button {
+    width: 100%;
+    border: 1px solid #1C1C1C;
+    background-color: #ffffff;
+}
+
+#get-code .phone-1 {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#get-code .phone-2 {
+    font-size: 12px;
+    color: #5C626D;
+}
+
+#get-code input {
+    width: 100%;
+    background-color: #0A0A0A;
+    border: 1px solid #1C1C1C;
+    border-radius: 6px;
+    color: white;
+    padding: 4px 12px;
+}
+
+#get-code input:focus {
+    border-color: #A8A8A8; /* Меняем цвет границы при фокусе */
+    box-shadow: 0 0 #0000, 0 0 #0000;
+    color: #ffffff;
+}
+
+#get-code .modal-container {
+    display: flex;
+    padding: 10px 0 0 0;
+    flex-direction: column;
+    justify-content: left;
+    gap: 4px;
+}
+
+#input-code .modal-container {
+    display: flex;
+    padding: 10px 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+#input-code .code-1 {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#input-code .code-2 {
+    font-size: 12px;
+    color: #5C626D;
+}
