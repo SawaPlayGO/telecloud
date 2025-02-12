@@ -5,15 +5,21 @@ import Circle from "./assets/cyrcle.svg?react";
 import Phone from "./assets/phone.svg?react";
 import Submit from "./assets/submit.svg?react";
 // import Trash from "./assets/trash.svg?react";
+// import Account from "./Account.tsx"
 
-import { useState  } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+// Modal
 import Modal from "react-modal";
+// Inputs
 import InputCode from "./OTPInput.tsx"
 
 // Lottie
 import Lottie from "lottie-react";
 import animationAddAccount from "./assets/animations/add-account.json";
 import animationInputCode from "./assets/animations/input-code.json";
+import animationPhone from "./assets/animations/phone.json";
 
 Modal.setAppElement("#root");
 
@@ -21,6 +27,7 @@ function App() {
     const [isOpen, setIsOpen] = useState(false);
     const [isSecondModalOpen, setIsSecondModalOpen] = useState(false);
     const [isTreeModalOpen, setTreeModalOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <>
@@ -58,6 +65,7 @@ function App() {
                         <button id="get-code" className="modal-close" onClick={() => setIsSecondModalOpen(false)}>✖</button>
                     </div>
                     <div id="get-code" className="modal-container">
+                        <Lottie animationData={animationPhone}></Lottie>
                         <p className="phone-1">Phone Number</p>
                         <p className="phone-2">Should with country code like: 8613712345678</p>
                         <input className="input-phone" type="text"/>
@@ -81,9 +89,7 @@ function App() {
                         <p className="code-1">Authentication Code</p>
                         <p className="code-2">Please enter the code sent to your telegram account.</p>
                         <InputCode></InputCode>
-                        <button id="input-code" className="modal-button" onClick={() => setTreeModalOpen(true)}>🚀
-                            Submit
-                        </button>
+                        <button id="input-code" className="modal-button" onClick={() => navigate('/account')}>🚀 Submit</button>
                     </div>
                 </Modal>
                 <button className="add-account" onClick={() => setIsOpen(true)}>
