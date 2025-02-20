@@ -61,7 +61,7 @@ p {
     color: #97A39A
 }
 
-.add-account, button {
+.add-account {
     border: 1px solid #1C1C1C;
     border-radius: 6px;
     padding: 6px 16px;

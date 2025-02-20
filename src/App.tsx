@@ -1,7 +1,7 @@
 import './App.css';
 import Icon from "./assets/icon.svg?react";
 import Add from "./assets/add.svg?react";
-import Circle from "./assets/cyrcle.svg?react";
+import Circle from "./assets/circle.svg?react";
 import Phone from "./assets/phone.svg?react";
 import Submit from "./assets/submit.svg?react";
 // import Trash from "./assets/trash.svg?react";

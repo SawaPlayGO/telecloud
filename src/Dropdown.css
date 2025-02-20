@@ -1,0 +1,41 @@
+.dropdown-container {
+}
+
+.selected-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    color: #ffffff;
+
+    width: 100%;
+
+    white-space: nowrap;
+    border: 1px solid #262626;
+    border-radius: 6px;
+
+    .icon-drop {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+.persons-container {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.person-container {
+    padding: 10px;
+    border: 1px solid #262626;
+    border-radius: 6px;
+}
+
+.person-container:hover {
+    background-color: #262626;
+}
+
